@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text, ImageBackground, KeyboardAvoidingView, TouchableOpacity } from "react-native";
+import { View, ImageBackground, KeyboardAvoidingView, TouchableOpacity } from "react-native";
+import { Text} from 'react-native-elements';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { Sae } from 'react-native-textinput-effects';
+
+import UserPhoto from '../../utils/UserPhoto';
 
 class SignUp extends Component{
     render() {
@@ -10,8 +13,8 @@ class SignUp extends Component{
             <ImageBackground source={require('../../images/defaultScreen.png')} style={{ width: '100%', height: '100%' }}>
                 <View style={{ flex:1, paddingHorizontal: '10%'}}>
                     <View style={{ flex: 2, justifyContent: 'center' }} >
+                        <UserPhoto />
                         <Text style={{ color: 'white', textAlign: 'center' }} >SignUp Screen</Text>
-                        <Text style={{ color: 'white', textAlign: 'center' }} >User Photo</Text>
                     </View>
                     <View style={{ flex: 2 }}>
                         <KeyboardAvoidingView style={{ flex: 1 }} behavior="padding" enabled>
