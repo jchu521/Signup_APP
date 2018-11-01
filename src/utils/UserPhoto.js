@@ -17,7 +17,6 @@ class UserPhoto extends Component{
                 path: 'images'
             }
         };
-        console.log('test');
 
         ImagePicker.showImagePicker(options, (response) => {
             console.log('Response = ', response);
